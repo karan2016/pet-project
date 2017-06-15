@@ -13,8 +13,6 @@ function HomePageHeader(params) {
             </a>
             <div className={styles.searchBox}>
                 <input type="text" placeholder="搜索你想要的"/>
-                <a className="btn btn-default" href="#" role="button">Link</a>
-                <input className="btn btn-default" type="button" value="Input"/>
             </div>
         </div>
     )

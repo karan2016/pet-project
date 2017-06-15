@@ -1,4 +1,5 @@
 import React from 'react';
+import {Row, Col} from 'antd';
 import styles from './index.less';
 
 function HomePageBanner() {
@@ -17,27 +18,3 @@ function HomePageBanner() {
 }
 
 export default HomePageBanner;
-
-function HomePageDesc() {
-    return (
-        <div>
-            <h3>title</h3>
-            <ul>
-                <li>
-                    <div className="img"></div>
-                    <div>desc</div>
-                </li>
-                <li>
-                    <div className="img"></div>
-                    <div>desc</div>
-                </li>
-                <li>
-                    <div className="img"></div>
-                    <div>desc</div>
-                </li>
-            </ul>
-        </div>
-    )
-}
-
-export {HomePageDesc};
