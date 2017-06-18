@@ -1,4 +1,5 @@
 .content {
+    background: #fff;
     .desc {
         padding:  40px 0;
         .desc-title {
@@ -48,6 +49,20 @@
                     height: 180px;
                 }
             }
+
+            p {
+                .to-left {
+                    margin-right: 10px;
+                }
+
+                .to-right {
+                    margin-left: 10px;
+                }
+
+                line-height: 40px;
+                margin-left: 40px;
+                font-size: 18px;
+            }
         }
     }
 
@@ -63,12 +78,26 @@
 
         .city-content {
             li {
-                display: inline-block;
                 padding: 0 40px;
-                margin-bottom: 40px;
+                margin: 20px auto;
                 font-size: 32px;
                 color: #666666;
+                margin: 15px aut0;
+                display: flex;
+                justify-content: space-around;
             }
         }
+    }
+}
+
+.showModule {
+    text-align: center;
+    > div {
+        display: inline-block;
+        width: 368px;
+    }
+    p {
+        font-size: 18px;
+        text-align: left;
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Layout} from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
-import HomePageHeader from './../components/HomePageHeader';
+import PageHeader from './../components/layout/pageHeader';
 import HomePageFooter from './../components/HomePageFooter';
 import HomePageBanner from './../components/HomePageBanner';
 import HomePageContent from './../components/HomePageContent';
@@ -13,7 +13,7 @@ function IndexPage() {
             <Layout>
                 <Layout>
                     <Header className={LayoutLess.AntLayoutHeader}>
-                        <HomePageHeader />
+                        <PageHeader />
                     </Header>
                     <Content>
                         <HomePageBanner />
