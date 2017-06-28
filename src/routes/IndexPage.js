@@ -1,21 +1,31 @@
 import React from 'react';
-import { connect } from 'dva';
-import styles from './IndexPage.css';
+import {Layout} from 'antd';
+const { Header, Footer, Sider, Content } = Layout;
+import PageHeader from './../components/layout/pageHeader';
+import HomePageFooter from './../components/HomePageFooter';
+import HomePageBanner from './../components/HomePageBanner';
+import HomePageContent from './../components/HomePageContent';
+import LayoutLess from './../components/StylesReset/layout.less';
 
 function IndexPage() {
-  return (
-    <div className={styles.normal}>
-      <h1 className={styles.title}>Yay! Welcome to dva!</h1>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/index.js</code> and save to reload.</li>
-        <li><a href="https://github.com/dvajs/dva-docs/blob/master/v1/en-us/getting-started.md">Getting Started</a></li>
-      </ul>
-    </div>
-  );
+    return (
+        <div>
+            <Layout>
+                <Layout>
+                    <Header className={LayoutLess.AntLayoutHeader}>
+                        <PageHeader />
+                    </Header>
+                    <Content>
+                        <HomePageBanner />
+                        <HomePageContent />
+                    </Content>
+                    <Footer className={LayoutLess.AntLayoutFooter}>
+                        <HomePageFooter />
+                    </Footer>
+                </Layout>
+            </Layout>
+        </div>
+    );
 }
 
-IndexPage.propTypes = {
-};
-
-export default connect()(IndexPage);
+export default IndexPage;
